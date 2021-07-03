@@ -1,3 +1,5 @@
+import cartIcon from "./cart-icon";
+
 export default function createDailySpecial(dish) {
     const container = document.createElement("div");
     container.classList.add("daily-special-container");
@@ -15,11 +17,7 @@ export default function createDailySpecial(dish) {
     description.classList.add("daily-special-description");
     descriptionContainer.appendChild(description);
 
-    const icon = document.createElement("span");
-    icon.classList.add("material-icons");
-    icon.classList.add("material-icons-outlined");
-    icon.innerText = "shopping_cart";
-    descriptionContainer.appendChild(icon);
+    descriptionContainer.appendChild(cartIcon());
 
     container.appendChild(descriptionContainer);
 

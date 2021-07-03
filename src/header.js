@@ -1,4 +1,5 @@
 import logo from "./logo-white.png";
+import cartIcon from "./cart-icon";
 
 export default function header() {
     const header = document.createElement("header");
@@ -26,6 +27,8 @@ export default function header() {
         li.classList.add("nav-item");
         ul.appendChild(li);
     });
+
+    ul.appendChild(cartIcon());
 
     nav.appendChild(ul);
     header.appendChild(nav);
