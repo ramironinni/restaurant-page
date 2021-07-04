@@ -1,4 +1,4 @@
-import cartIcon from "./cart-icon";
+import cartIcon from "../cart-icon";
 
 export default function createDailySpecial(dish) {
     const container = document.createElement("div");

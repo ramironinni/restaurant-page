@@ -10,7 +10,11 @@ export default function header() {
     const ul = document.createElement("ul");
     ul.classList.add("nav-list");
 
-    const navItems = ["Home", "Menu", "Contact"];
+    const navItems = [
+        { text: "Home", class: "nav-home" },
+        { text: "Menu", class: "nav-menu" },
+        { text: "Help", class: "nav-help" },
+    ];
 
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("logo-container");
@@ -23,8 +27,9 @@ export default function header() {
 
     navItems.forEach((item) => {
         const li = document.createElement("li");
-        li.innerText = item;
+        li.innerText = item.text;
         li.classList.add("nav-item");
+        li.classList.add(item.class);
         ul.appendChild(li);
     });
 

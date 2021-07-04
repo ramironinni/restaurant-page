@@ -1,14 +1,35 @@
 import "./style.css";
-import main from "./main";
+import home from "./home/home";
 import header from "./header";
+import menu from "./menu/menu";
+import help from "./help/help";
 
-function content() {
-    const content = document.getElementById("content");
+document.body.appendChild(header());
 
-    content.appendChild(header());
-    content.appendChild(main());
+const content = document.createElement("div");
+content.classList.add("content");
+document.body.appendChild(content);
 
-    document.body.appendChild(content);
+function setContent(currentTab) {
+    content.innerText = "";
+    content.appendChild(currentTab());
 }
 
-content();
+setContent(home);
+
+(function listeners() {
+    const homeBtn = document.querySelector(".nav-home");
+    homeBtn.addEventListener("click", () => {
+        setContent(home);
+    });
+
+    const menuBtn = document.querySelector(".nav-menu");
+    menuBtn.addEventListener("click", () => {
+        setContent(menu);
+    });
+
+    const helpBtn = document.querySelector(".nav-help");
+    helpBtn.addEventListener("click", () => {
+        setContent(help);
+    });
+})();

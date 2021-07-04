@@ -2,7 +2,7 @@ import createDailySpecial from "./create-daily-specials";
 import { dishes } from "./daily-special-dishes";
 import callToAction from "./call-to-action";
 
-export default function main() {
+export default function home() {
     const main = document.createElement("main");
     const h2 = document.createElement("h2");
     h2.innerText = "Daily Specials";

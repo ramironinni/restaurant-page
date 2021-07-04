@@ -63,6 +63,7 @@ body {
 
 .nav-item {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .logo-container {
