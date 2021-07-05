@@ -1,3 +1,4 @@
+import "./style.css";
 import logo from "./logo-white.png";
 import cartIcon from "./cart-icon";
 

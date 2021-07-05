@@ -1,6 +1,6 @@
-import dish1 from "./daily-special-1.jpg";
-import dish2 from "./daily-special-2.jpg";
-import dish3 from "./daily-special-3.jpg";
+import dish1 from "../assets/menu-1.jpg";
+import dish2 from "../assets/menu-2.jpg";
+import dish3 from "../assets/menu-3.jpg";
 
 export const dishes = [
     {

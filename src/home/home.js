@@ -1,6 +1,7 @@
 import createDailySpecial from "./create-daily-specials";
 import { dishes } from "./daily-special-dishes";
 import callToAction from "./call-to-action";
+import "./style.css";
 
 export default function home() {
     const main = document.createElement("main");

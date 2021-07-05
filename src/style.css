@@ -3,10 +3,6 @@
     src: url(./Nunito/Nunito-Regular.ttf);
 }
 
-:root {
-    --daily-special-width: 80%;
-}
-
 html {
     box-sizing: border-box;
 }
@@ -92,44 +88,6 @@ h2 {
     margin: 0;
 }
 
-.daily-special-container {
-    margin: 1rem 0;
-    border-radius: 2rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    position: relative;
-    height: 250px;
-}
-
-.daily-special-img {
-    width: 100%;
-}
-
-.daily-special-description-container {
-    background-color: #3b6ebb;
-    color: #fff;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.daily-special-description {
-    margin-right: 0.5rem;
-}
-
-.call-to-action-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 button {
     border: none;
     padding: 0.5rem 1rem;
@@ -143,8 +101,4 @@ button {
     cursor: pointer;
     text-align: center;
     border-radius: 5rem;
-}
-
-.button-home {
-    margin-top: 0.6rem;
 }
