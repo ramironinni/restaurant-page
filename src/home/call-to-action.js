@@ -9,6 +9,7 @@ export default function callToAction() {
     const menu = document.createElement("button");
     menu.classList.add("button-home");
     menu.innerText = "Check the menu";
+
     callToAction.appendChild(menu);
 
     const contact = document.createElement("button");

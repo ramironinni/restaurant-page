@@ -47,7 +47,11 @@ body {
 .nav {
     background-color: #3b6ebb;
     color: #fff;
-    /* background-color: #f3a851; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: scroll;
 }
 
 .nav-list {
@@ -55,11 +59,14 @@ body {
     padding: 1rem 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-item {
     list-style-type: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .logo-container {
@@ -68,6 +75,10 @@ body {
 
 .logo {
     width: 100%;
+}
+
+.content {
+    margin-top: 4rem;
 }
 
 main {

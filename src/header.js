@@ -17,15 +17,6 @@ export default function header() {
         { text: "Help", class: "nav-help" },
     ];
 
-    const imgContainer = document.createElement("div");
-    imgContainer.classList.add("logo-container");
-    const img = document.createElement("img");
-    img.src = logo;
-    img.classList.add("logo");
-    imgContainer.appendChild(img);
-
-    ul.appendChild(document.createElement("li").appendChild(imgContainer));
-
     navItems.forEach((item) => {
         const li = document.createElement("li");
         li.innerText = item.text;
