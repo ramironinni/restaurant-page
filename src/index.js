@@ -12,6 +12,7 @@ document.body.appendChild(content);
 
 function setContent(currentTab) {
     content.innerText = "";
+    window.scrollTo(0, 0);
     content.appendChild(currentTab());
 }
 

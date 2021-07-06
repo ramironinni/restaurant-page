@@ -1,6 +1,5 @@
 import "./style.css";
-import logo from "./logo-white.png";
-import cartIcon from "./cart-icon";
+import cartIcon from "./assets/cart-icon";
 
 export default function header() {
     const header = document.createElement("header");
